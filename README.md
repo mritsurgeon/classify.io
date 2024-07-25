@@ -1,4 +1,4 @@
-# classify.io
+# Classify.io
 Data Classification Tool ( For Backup TBD )
 
 This project provides a tool to parse Veeam backup data or any data path using Apache Tika and perform Named Entity Recognition (NER) using the GLiNER model via spaCy. It also integrates with a ChromaDB vector database for data storage and retrieval and uses a chatbot interface powered by the Ollama API to respond to queries based on the parsed data.
