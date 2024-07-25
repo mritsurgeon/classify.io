@@ -37,19 +37,19 @@ This project provides a tool to parse Veeam backup data or any data path using A
 ## Usage
 
 1. **Run the Application**:
-   streamlit run app.py
-   Replace `app.py` with the main script name if different.
+   streamlit run classifyio.py
 
 2. **RAG Chatbot**: Interact with the chatbot to query your data. The chatbot uses the Ollama API to generate responses based on the data stored in ChromaDB.
 
-3. **Set the Directory for Analysis**: Configure the directory containing the Veeam backup files by editing the following line in the code:
-   # Directory containing the files
-   directory = 'C:\\Data\\demo'
+3. **Set the Directory for Analysis**: Configure the directory containing the Veeam backup FLR files by editing the following line in the code:
+   Directory containing the files:
+   `directory = 'C:\\VeeamFLR\\'`
+   You might choose more granular folder paths to enhance performance. This can be tested with a ratio of compute needed versus data to process, such as:
+   `directory = 'C:\VeeamFLR\target_3c75de11\Volume1\Users\Administrator\Documents'`
 
-## Under Construction
+## Project Stage
 
-* The API functionality is yet to be integrated.
-* The Veeam backup server configuration in the UI currently holds placeholder data.
+This project is currently in its infancy or Minimal Viable Product (MVP) stage. As a result, some features may be under development, and the implementation may evolve as feedback is gathered and the project matures. Due to the evolving nature of machine learning, changes and tweaks might be needed to ensure the best model is used. Different types of datasets might have varying performance outcomes on certain models or NER techniques, necessitating ongoing adjustments and optimizations.
 
 ## Lessons Learned
 
@@ -57,7 +57,12 @@ During the development of this project, several key insights were gained:
 
 * **Model Performance**: Finding the right balance between accuracy and performance is crucial, especially when working with large datasets.
 * **System Resources**: The resources required can vary significantly depending on the size of the dataset. While testing was conducted on a CPU, a GPU is recommended for handling large datasets to improve processing efficiency and performance.
-* **Integration Challenges**: Combining different technologies like Apache Tika, spaCy, ChromaDB, and Ollama required attention to compatibility and configuration details. Each component's setup and performance had to be finely tuned to achieve a seamless workflow.
+* **Integration Challenges**: Combining different technologies like Apache Tika, spaCy, ChromaDB, and Ollama required attention to compatibility and configuration details. Each component's setup and performance has to be finely tuned to achieve a seamless workflow.
+
+## Under Construction
+
+* The API functionality is yet to be integrated.
+* The Veeam backup server configuration in the UI currently holds placeholder data.
 
 ## License
 
