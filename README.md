@@ -3,6 +3,14 @@ Data Classification Tool ( For Backup TBD )
 
 This project provides a tool to parse Veeam backup data or any data path using Apache Tika and perform Named Entity Recognition (NER) using the GLiNER model via spaCy. It also integrates with a ChromaDB vector database for data storage and retrieval and uses a chatbot interface powered by the Ollama API to respond to queries based on the parsed data.
 
+### Test a Slimmed-Down Version of This Tool on Google Colab
+
+- Google Colab is free and provides access to GPU.
+- This version is a slimmed-down version designed to test the Gliner PII model and UI.
+
+You can access the Colab notebook here:
+https://colab.research.google.com/drive/1A7FeCPDuN5pT6jqEdKXqD4e0q5b6PBfk
+
 ## Features
 
 * **Tika Integration**: Supports over a thousand file types, including PDF, DOCX, PPTX, and more, for metadata and text extraction.
